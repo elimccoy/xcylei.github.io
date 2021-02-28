@@ -1,0 +1,243 @@
+div.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div.loader{
+  position: absolute;
+  height: 803px;
+  width: 1200px;
+  background-color: bisque;
+  z-index: 100;
+}
+
+img.rotate {
+  animation: rotation 1s infinite linear;
+  margin-left: 560px;
+  margin-top: 323px;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in .5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in .5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in .5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in .5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
+}
+
+div.header {
+  height: 100px;
+  width: 1200px;
+  text-align: center;
+  background-color: darkseagreen;
+  display: flex;
+  border-bottom: solid 3px black;
+}
+
+p.headerTitle {
+  font-family:verdana;
+  margin: 0px;
+  font-size: 75px;
+  font-weight: bold;
+  flex: 1;
+}
+
+div.mainSection {
+  height: 700px;
+  width: 1200px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+div.hikeTitle {
+  font-family:verdana;
+  font-size: 15px;
+  flex: 1;
+  flex-direction: row;
+  background-color: lightslategray;
+  display: flex;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img.backbutton {
+  height: 80px;
+  width: 80px;
+  margin-left: 900px;
+}
+
+img.hikeImage {
+  border-radius: 25px;
+  height: 310px;
+  width: 500px;
+  margin-left: 10px;
+}
+
+div.section {
+  margin-top:10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  flex: 3;
+  flex-direction: row;
+  display: flex;
+}
+
+div.infoSection {
+  border-style: solid;
+  font-family:verdana;
+  flex: 1;
+  border-radius: 25px;
+  padding-left: 40px;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: darkseagreen;
+}
+
+p.infoText {
+  font-size:30px;
+  font-weight: bold;
+}
+ 
+div.planningandbuttons {
+  font-family:verdana;
+  border-style: solid;
+  flex: 1;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: darkseagreen;
+  flex-direction: column;
+  display: flex;
+}
+
+div.graphSection {
+  font-family:verdana;
+  border-style: solid;
+  flex: 1;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: darkseagreen;
+  display: flex;
+  text-align: center;
+  
+}
+
+div.planning {
+  flex: 1;
+  background-color: burlywood;
+  padding-left: 20px;
+  padding-top: 0px;
+  border-radius: 25px;
+  margin: 5px
+}
+
+img.graph {
+  border-style: solid;
+  border-radius: 25px;
+  margin: 10px;
+  height: 230px;
+  width: 320px;
+}
+
+div.buttonHolder {
+  flex: 1;
+  border-radius: 25px;
+  margin: 5px;
+  flex-direction: row;
+  display: flex;
+  
+}
+
+div.revieworjoin {
+  box-shadow: 5px 5px 5px black;
+  flex: 1;
+  margin: 5px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 145);
+  border-style: solid;
+}
+
+div.revieworjoin:hover {
+  box-shadow: 5px 5px 5px black;
+  flex: 1;
+  margin: 5px;
+  border-radius: 25px;
+  background-color: rgb(168, 168, 96);
+}
+
+div.profileButton{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Verdana;
+  font-weight: bold;
+  border-style: solid;
+  height: 22px;
+  width: 70px;
+  background-color: rgb(163, 163, 163);
+  margin-top: 75px;
+  margin-left: 980px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 0;
+}
+
+div.signoutButton{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Verdana;
+  font-weight: bold;
+  border-style: solid;
+  height: 22px;
+  width: 90px;
+  background-color: rgb(163, 163, 163);
+  margin-top: 75px;
+  margin-left: 1060px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 0;
+}
+
+div.signoutButton:hover {
+  background-color: gray;
+}
+
+div.profileButton:hover {
+  background-color: gray;
+}

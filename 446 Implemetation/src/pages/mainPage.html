@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/mainPage.styles.css">
+    <link rel="icon" href="../assets/loader.png">
+    <title>Hiking Buddy</title>
+  </head>
+  
+  <body>
+
+    <div id='hideMe' class="loader">
+      <img src="../assets/loader.png" class="rotate">
+    </div>
+
+    <div class="mainContainer">
+
+      <div class="header">
+        <p class="headerTitle" style="margin-left: 260px;">Hiking Buddy</p>
+        <img src="../assets/pngegg.png" style="width: 90px; height: 90px; margin-right: 250px;">
+        
+        <div class="profileButton" onclick="location.href='./profile.html'">
+          Profile
+        </div>
+        <div class="signoutButton" onclick="location.href='./signIn.html'" >
+          Sign-Out
+        </div>
+
+      </div>
+    
+      <div class="mainSection">
+        <div class="mapSection">
+    
+          <div id="googleMap" class="mapPhoto"></div>
+          <script>
+            function myMap() {
+              var mapProp = {
+                center: new google.maps.LatLng(48.773935, -121.809983),
+               zoom: 11,
+             };
+             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+              //Setting Markers:
+              var hikeOne = new google.maps.Marker({ position: mapProp.center });
+              google.maps.event.addListener(hikeOne, 'click', function () {
+                location.href = './hikeOne.html';
+              });
+
+              hikeOne.setMap(map);
+            }
+          </script>
+         <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvWiMVpExz6i-a0tOkegLNLzvHnfpouXQ&callback=myMap"></script>
+    
+        </div>
+    
+       <div class="listSection">
+    
+          <div class="listHeader">
+            <p class="listTitle">Hikes near you:</p>
+         </div>
+    
+         <div class="listItem" onclick="location.href='./hikeOne.html';" style="cursor: pointer;">
+    
+           <img class="listItemPhoto" src="../assets/Twist_Mountain_anime.png">
+    
+           <div class="listItemInfo">
+             <h4 style="margin: 5px; padding: 0px;"> Mt. Baker:</h4>
+             <p style="margin: 5px;">Difficulty: easy <br>Distance: 2 miles</p>
+            </div>
+    
+    
+         </div>
+    
+          <div class="listItem">
+    
+            <img class="listItemPhoto" src="../assets/Twist_Mountain_anime.png">
+    
+           <div class="listItemInfo">
+              <h4 style="margin: 5px; padding: 0px;"> Hike 2:</h4>
+              <p style="margin: 5px;">Difficulty: hard! <br>Distance: 4 miles</p>
+           </div>
+    
+          </div>
+    
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+          <div class="listItem"></div>
+    
+        </div>
+    
+      </div>
+    </div>
+  </body>
+
+</html>

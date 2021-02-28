@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" href="../styles/join.styles.css">
+    <link rel="icon" href="../assets/loader.png">
+    <title>Join A Hike</title>
+
+  </head>
+  
+  <body>
+
+    <div class="mainContainer">
+  
+      <div id='hideMe' class="loader">
+        <img src="../assets/loader.png" class="rotate">
+      </div>
+
+      <div class="header">
+        <p class="headerTitle" style="margin-left: 260px;">Hiking Buddy</p>
+        <img src="../assets/pngegg.png" style="width: 90px; height: 90px; margin-right: 250px;">
+
+        <div class="profileButton" onclick="location.href='./profile.html'">
+          Profile
+        </div>
+        <div class="signoutButton" onclick="location.href='./signIn.html'" >
+          Sign-Out
+        </div>
+
+      </div>
+  
+      <div class="mainSection">
+
+        <img class="backbutton" 
+               src= "../assets/backbutton.jpg"
+               onclick="location.href='./hikeOne.html';"
+               style="cursor: pointer; position:absolute; padding-left: 200px; padding-top: 10px;"
+          >
+
+        <h1 style="font-family: Verdana;">Join a group</h1>
+        <div class="formSec">
+          <form>
+            <div class="form-field">
+              <p>Your Name</p>
+              <input type="text" placeholder="First name">
+              <input type="text" placeholder="Last name">
+            </div>
+      
+            <div class="form-field">
+              <p>Your email</p>
+              <input type="email" placeholder="Email">
+            </div>
+      
+            <div class="form-field">
+              <p>Date</p>
+              <input type="date">
+            </div>
+      
+            <div class="form-field">
+              <p>Time</p>
+              <input type="time">
+      
+            </div>
+      
+            <div style="margin-bottom: 10px;" class="form-field">
+              <p></p>
+              <input type="Submit" onClick="alert('Thank you for your joining a group! Your group will be shown on your profile.')">
+      
+            </div>
+        </div>
+
+        <div id="bulbasaur"> 
+        <img src="../assets/bulbasaur.png";>
+        </div>
+        <div id="charmander"> 
+        <img src="../assets/charmander.png";>
+        </div>
+        <div id="squirtle"> 
+        <img src="../assets/squirtle.png";>
+        </div>
+  
+      </div>
+
+    </div>
+  </body>
+
+
+
+</html>

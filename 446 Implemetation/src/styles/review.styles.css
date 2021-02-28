@@ -1,0 +1,304 @@
+div.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div.loader{
+  position: absolute;
+  height: 803px;
+  width: 1200px;
+  background-color: bisque;
+  z-index: 100;
+}
+
+img.rotate {
+  animation: rotation 1s infinite linear;
+  margin-left: 560px;
+  margin-top: 323px;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in .2s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in .2s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in .2s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in .2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
+}
+
+div.header {
+  font-family:verdana;
+  height: 100px;
+  width: 1200px;
+  text-align: center;
+  background-color: darkseagreen;
+  display: flex;
+  border-bottom: solid 3px black;
+}
+
+p.headerTitle {
+  margin: 0px;
+  font-size: 75px;
+  font-weight: bold;
+  flex: 1;
+}
+
+div.mainSection {
+  height: 700px;
+  width: 1200px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+.rating
+{
+  position: absolute;
+  top: 320px;
+  top: 50%
+  left 50%
+  transform: translate(-50%,-50%);
+  transform: rotateY(180deg);
+  display: flex;
+}
+
+.rating input
+{
+  display: none;
+}
+
+.rating label
+{
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  
+
+}
+.rating label:before
+{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 50px;
+  color: #101010;
+
+}
+
+.rating label:after
+{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  color: darkseagreen;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+section {
+  position: absolute;
+  margin-left: 720px;
+  width: 400px;
+  
+}
+
+section textarea {
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  outline: none;
+  font-size: 80%;
+  resize: vertical;
+  margin-bottom: 20px;
+  border: 1px solid darkseagreen;
+  border-bottom: 4px solid darkseagreen;
+}
+
+section p {
+  float: left;
+  line-height: 30px;
+}
+
+section span {
+  font-weight: bold;
+}
+
+section button {
+  border: 0;
+  width:  30%;
+  color: #fff;
+  height: 35px;
+  float: right;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: darkseagreen;
+  border-bottom: 3px solid darkseagreen;
+}
+
+section button:hover {
+  background-color: darkgreen;
+  border-bottom: 3px black;
+}
+
+section button:disabled {
+  background-color: #d3d3d3 ;
+  border-bottom: 3px solid #d3d3d3;
+}
+
+section ul {
+  margin-top: 60px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+section ul li {
+  padding: 10px 10px;
+  word-wrap: break-word;
+  border-bottom: 3px solid darkseagreen;
+}
+
+section ul li:hover {
+  border-bottom: 3px solid darkgreen;
+}
+.submitButton{
+  position: absolute;
+  margin-top: 270px;
+}
+
+section.commentSection {
+  font-family: verdana;
+  margin-top: 50px;
+  height: 570px;
+  width: 400px;
+  border-radius: 25px;
+  border-style: solid;
+  background-color: burlywood;
+  margin-left: 630px;
+}
+
+#boxList {
+  font-family: verdana;
+  margin-top: 50px;
+  height: 300px;
+  width: 350px;
+  margin-left: 25px;
+  border-radius: 25px;
+  border-style: solid;
+  background-color: rgb(255, 217, 167);
+  overflow:scroll;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+#formSec {
+  margin-top: 90px;
+  margin-left: 120px;
+  text-align: center; 
+  width: 450px;
+  font-family: Verdana;
+  background-color: burlywood;
+  align-content: center;
+  border-radius: 25px;
+  border-style: solid;
+  height:300px;
+}
+
+div.hikeTitle {
+  font-family:verdana;
+  font-size: 15px;
+  flex-direction: row;
+  display: flex;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height:80px;
+}
+
+img.backbutton {
+  height: 80px;
+  width: 80px;
+  margin-left: 1070px;
+}
+
+div.profileButton{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Verdana;
+  font-weight: bold;
+  border-style: solid;
+  height: 22px;
+  width: 70px;
+  background-color: rgb(163, 163, 163);
+  margin-top: 75px;
+  margin-left: 980px;
+  position: absolute;
+  cursor: pointer;
+}
+
+div.signoutButton{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Verdana;
+  font-weight: bold;
+  border-style: solid;
+  height: 22px;
+  width: 90px;
+  background-color: rgb(163, 163, 163);
+  margin-top: 75px;
+  margin-left: 1060px;
+  position: absolute;
+  cursor: pointer;
+}
+
+div.signoutButton:hover {
+  background-color: gray;
+}
+
+div.profileButton:hover {
+  background-color: gray;
+}
