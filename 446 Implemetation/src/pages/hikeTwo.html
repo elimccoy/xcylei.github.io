@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/hikeOne.styles.css">
+    <link rel="icon" href="../assets/loader.png">
+    <title>Mt. Smith Info</title>
+  </head>
+  
+  <body>
+
+    <div class="mainContainer">
+      
+      <div id='hideMe' class="loader">
+        <img src="../assets/loader.png" class="rotate">
+      </div>
+      
+      <div class= "header">
+        <p class= "headerTitle" style= "margin-left: 260px;">Hiking Buddy</p>
+        <img src= "../assets/pngegg.png" style="width: 90px; height: 90px; margin-right: 250px;">
+
+        <div class="profileButton" onclick="location.href='./profile.html'">
+          Profile
+        </div>
+        <div class="signoutButton" onclick="location.href='./signIn.html'" >
+          Sign-Out
+        </div>
+
+      </div>
+  
+      <div class= "mainSection">
+  
+        <div class= "hikeTitle">
+          <h1 style= "margin-left: 20px; margin-top: 30; margin-bottom: 2px; flex: 1;">Mt. Smith:</h1>
+          <img class="backbutton" 
+               src= "../assets/backbutton.jpg"
+               onclick="location.href='./mainPage.html';"
+               style="cursor: pointer;"
+          >
+        </div>
+        
+        <div class="section">
+          
+          <img class= "hikeImage" src="../assets/mtsh.jpg">
+  
+          <div class= "infoSection">
+            <p class= "infoText">Number of people hiking today: 3</p>
+            <p class= "infoText">Hike difficulty: Hard<br>Weather: 31 degrees<br>Path Conditions: Poor</p>
+            <p class="infoText" style = "font-size: 20px;"><a href="https://weather.com/weather/tenday/l/SMITHMTNVA:13:US">Ten Day Weather Forecast</a></p>
+          </div>
+  
+        </div>
+        
+        <div class="section">
+        
+          <div class="graphSection">
+            <h1 style= "padding-left: 15px; padding-top: 35px;">Number of people hiking today:</h1>
+            <img class= "graph" src= "../assets/graph.PNG">
+          </div>
+  
+          <div class="planningandbuttons">
+            
+            <div class= "planning">
+              
+              <h1 style="font-size: 25px;">Planning on going on this hike today?</h1>
+              <input type="radio" id="Yes" name="gender" value="yes">
+              <label for="Yes">Yes</label>
+              <input type="radio" id="No" name="gender" value="no">
+              <label for="No">No</label>
+              <button 
+                style="margin-left: 20px;"
+                type="button" 
+                onclick="alert('Thank you for your submission!')"
+              >Submit!</button>
+  
+            </div>
+            
+            <div class= "buttonHolder">
+  
+              <div style= "text-align: center; text-decoration: underline; cursor: pointer;"
+                   class= "revieworjoin"
+                   onclick="location.href='./join.html';"
+              >
+                <h1>Join a Group</h1>
+              </div>
+              <div style= "text-align: center; padding-right: 5px; text-decoration: underline; cursor: pointer;" 
+                   class= "revieworjoin"
+                   onclick="location.href='./review.html';"
+              >
+                <h1>Review This Hike</h1>   
+              </div>
+  
+            </div>
+  
+          </div>
+        
+        </div>
+  
+  
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

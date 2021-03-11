@@ -209,15 +209,9 @@ div.settings {
   font-family: Verdana;
   font-weight: bold;
   height: 32px;
-  width: 220px;
-  box-shadow: 5px 5px 5px black;
+  width: 275px;
   border-style: solid;
-  cursor: pointer;
-  margin-left: 810px;
+  margin-left: 780px;
   font-size: 25px;
   margin-top: 30px;
-}
-
-div.settings:hover {
-  filter:brightness(50%)
 }

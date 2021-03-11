@@ -117,4 +117,6 @@ div.mainContainer {
     cursor: pointer;
   }
 
-  
+  div.signInButton:hover {
+    background-color: rgb(138, 115, 85);
+  }

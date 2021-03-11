@@ -45,6 +45,12 @@
                 location.href = './hikeOne.html';
               });
 
+              var hikeTwo = new google.maps.Marker({ position: new google.maps.LatLng(48.829078, -121.602480) });
+              google.maps.event.addListener(hikeTwo, 'click', function () {
+                location.href = './hikeTwo.html';
+              });
+
+              hikeTwo.setMap(map);
               hikeOne.setMap(map);
             }
           </script>
@@ -73,10 +79,10 @@
     
           <div class="listItem">
     
-            <img class="listItemPhoto" src="../assets/Twist_Mountain_anime.png">
+            <img class="listItemPhoto" onclick="location.href='./hikeTwo.html';" src="../assets/mtsh.jpg">
     
            <div class="listItemInfo">
-              <h4 style="margin: 5px; padding: 0px;"> Hike 2:</h4>
+              <h4 style="margin: 5px; padding: 0px;"> Mt. Smith:</h4>
               <p style="margin: 5px;">Difficulty: hard! <br>Distance: 4 miles</p>
            </div>
     
